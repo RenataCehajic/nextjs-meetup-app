@@ -1,0 +1,26 @@
+import MeetupList from "../components/meetups/MeetupList";
+
+const DUMMY_MEETUPS = [
+  {
+    id: "m1",
+    title: "A First Meetup",
+    image:
+      "https://www.thetrainline.com/content/vul/hero-images/city/ljubljana/2x.jpg",
+    address: "Trubarjeva cesta, Ljubljana",
+    description: "This is a first meetup!",
+  },
+  {
+    id: "m2",
+    title: "A Second Meetup",
+    image:
+      "https://cdn.kimkim.com/files/a/images/e6ed02b51de5cc040c62025b52748d3624eda8a3/big-a221fba325283cfb5e98072395bbd970.jpg",
+    address: "Gregorjeva ulica, Bled",
+    description: "This is a second meetup!",
+  },
+];
+
+const HomePage = (props) => {
+  return <MeetupList meetups={DUMMY_MEETUPS} />;
+};
+
+export default HomePage;
